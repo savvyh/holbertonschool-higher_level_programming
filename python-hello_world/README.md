@@ -20,6 +20,8 @@
 
 ## Requirement ⚓
 The first line of all files should be exactly #!/usr/bin/python3
+All files must be executable
+The length of files will be tested using wc
 
 ### Authors 🧞‍♀️
 Sarah BOUTIER
