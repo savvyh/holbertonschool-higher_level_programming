@@ -1,6 +1,6 @@
 # Python - Higher Level Programming !
 
-![_c0566a36-d23a-45e5-9c27-c63d4b565453](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/67817c5e-32eb-4ed2-a940-59cd5bda4df8)
+![_c0566a36-d23a-45e5-9c27-c63d4b565453](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/e02ef016-79d6-4561-8caa-9831aec022f7)
 
 ## General :100:
 - Pycodestyle
