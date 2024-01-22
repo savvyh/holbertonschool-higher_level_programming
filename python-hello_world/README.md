@@ -19,9 +19,9 @@
 * Task 7 : Write a Python script (script should be maximum 98 characters long (check with wc -m 9-easter_egg.py))
 
 ## Requirement ⚓
-The first line of all files should be exactly #!/usr/bin/python3
-All files must be executable
-The length of files will be tested using wc
+* The first line of all files should be exactly #!/usr/bin/python3
+* All files must be executable
+* The length of files will be tested using wc
 
 ### Authors 🧞‍♀️
 Sarah BOUTIER
