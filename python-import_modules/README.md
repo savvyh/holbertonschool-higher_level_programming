@@ -1,4 +1,5 @@
 # Python - import & modules
+![_e5cd9cfc-db0f-4916-a9a1-fb6960abe6e5](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/3a3512fc-bbe5-4bec-b982-fb616a08256c)
 
 ## General 🐍
 - How to import functions from another file ?
@@ -7,20 +8,23 @@
 
 In Python, modules, import statements, and packages are fundamental concepts that facilitate modular code organization. Here's a brief explanation of each :
 
-1. Modules 🥇
+#### 1. Modules 🥇
 * A module in Python is simply a file containing Python code.
 * It can include variables, functions, classes, and other code elements.
 * The primary purpose is to organize code by dividing it into separate files, making code management and maintenance easier.
 
-2. Import Statements (import):
+#### 2. Import Statements (import):
 * The import statement is used to include modules in a Python script.
 * It enables access to variables, functions, and classes defined in these modules.
 * There are various ways to use import, such as import module, from module import name, and import module as alias.
 
+![image](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/589e76b9-a4c2-4c69-aac5-dfef861787a2)
+
 You can also create an alias to rename the import program : 
 
+![image](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/95f93e88-305d-4d2d-b076-c671f9ee67af)
 
-3. Packages:
+#### 3. Packages:
 * A package is a way to organize related modules into a directory hierarchy.
 * It can contain sub-packages and modules, forming a tree-like structure.
 * The goal is to create a logical and clear organization for large-scale Python projects.
