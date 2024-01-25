@@ -10,7 +10,7 @@ if __name__ == "__main__":
         print("{} argument:" .format(number_args))
 
     else:
-        print("{} arguments :".format(number_args))
+        print("{} arguments:".format(number_args))
 
     number = 0
     for index in argv:
