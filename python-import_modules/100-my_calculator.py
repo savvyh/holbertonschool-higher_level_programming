@@ -17,7 +17,7 @@ if __name__ == "__main__":
         exit(1)
 
     if operator == '+':
-        result = add(a, b) 
+        result = add(a, b)
     elif operator == '-':
         result = sub(a, b)
     elif operator == '*':
