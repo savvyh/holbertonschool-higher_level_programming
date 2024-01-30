@@ -1,13 +1,8 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    tuple = (0, 0)
-    if len(tuple_a) < 2:
-        tuple_a += tuple
-    if len(tuple_b) < 2:
-        tuple_b += tuple
+    a = tuple_a + (0, 0)
+    b = tuple_b + (0, 0)
 
-    first_element = tuple_a[0] + tuple_b[0]
-    second_element = tuple_a[1] + tuple_b[1]
-    result = (first_element, second_element)
+    result = (a[0] + b[0], a[1] + b[1])
 
     return result
