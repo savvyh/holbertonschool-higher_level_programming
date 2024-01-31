@@ -14,6 +14,7 @@ Python provides various built-in data structures, such as lists, tuples, and dic
 
 ### Lists 🚥
 In Python, a list is a dynamic and ordered collection of elements. It allows you to store and manipulate multiple values within a single object. Lists are mutable, meaning you can modify them by adding, removing, or changing elements. They provide flexibility for managing and organizing data in your programs.
+
 * Task 0 : Write a function that prints all integers of a list, use str.format() to print integers.
 * Task 1 : Write a function that retrieves an element from a list. If idx is negative or idx is out of range, the function should return None. Not allowed to use try/except.
 * Task 2 : Write a function that replaces an element of a list at a specific position. If idx is negative or idx is out of range, the function should return None. Not allowed to use try/except.
@@ -23,6 +24,8 @@ In Python, a list is a dynamic and ordered collection of elements. It allows you
 * Task 6 : Write a function that prints a matrix of integers.
 
 ### Tuples 🌵
+Tuples are similar to lists but with a key difference – they are immutable. Once created, the elements in a tuple cannot be altered. This makes tuples suitable for storing unchangeable data, such as coordinates or fixed information. They offer a reliable way to represent and handle specific sets of values in your Python code.
+
 - Task 7 : Write a function that adds 2 tuples. Returns a tuple with 2 integers with specific conditions.
 - Task 8 : Write a function that returns a tuple with the length of a string and its first character. If the sentence is empty, the first character should be equal to None.
 - Task 9 : Write a function that finds the biggest integer of a list. We are not allowed to use `max()`
