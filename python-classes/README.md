@@ -1,5 +1,7 @@
 Python - Classes
-![Uploading _c25c8515-cd33-47ed-8c66-5272c80524ef.jpg…]()
+
+![_c25c8515-cd33-47ed-8c66-5272c80524ef](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/b5015b15-9a08-4a91-8d0c-0a86a3309733)
+
 
 ## General 🐍
 * OOP : OOP stands for Object-Oriented Programming. It is a programming paradigm that uses objects, which bundle data and methods, to design and organize code.
