@@ -4,7 +4,7 @@
 
 class Square:
     """
-        Private instance attribut : size 
+        Private instance attribut : size
         Instantiation with optional size, size=0.
     """
 
