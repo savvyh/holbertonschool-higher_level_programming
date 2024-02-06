@@ -11,10 +11,6 @@ class Square:
         self.__size = size
         self.__position = position
 
-    """Public instance method that return the current square area"""
-    def area(self):
-        return self.__size ** 2
-
     """Property to get the size"""
     @property
     def size(self):
@@ -28,15 +24,6 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-
-    """Prints the square with character #"""
-    def my_print(self):
-        if self.__size == 0:
-            print()
-        for i in range(self.__position[1]):
-            print()
-        for j in range(self.__size):
-            print(" " * self.__position[0] + "#" * self.__size)
 
     """Property to get value of the position"""
     @property
@@ -53,3 +40,17 @@ class Square:
             or not any(x < 0 for x in value)
         ):
             raise TypeError("position must be a tuple of 2 positive integers")
+
+    """Public instance method that return the current square area"""
+    def area(self):
+        return self.__size ** 2
+
+    """Prints the square with character #"""
+    def my_print(self):
+        if self.__size == 0:
+            print()
+        for i in range(self.__position[1]):
+            print()
+        for j in range(self.__size):
+            print(" " * self.__position[0] + "#" * self.__size)
+
