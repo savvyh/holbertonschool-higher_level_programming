@@ -19,11 +19,11 @@ class Square:
     """Property setter to set the size into value"""
     @size.setter
     def size(self, value):
-        self.__size = value
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
+        self.__size = value
 
     """Property to get value of the position"""
     @property
@@ -33,13 +33,13 @@ class Square:
     """Property setter to set position into value & check if 2 + integers"""
     @position.setter
     def position(self, value):
-        self.__position = value
         if (
             not isinstance(value, tuple) or len(value) != 2
             or not all(isinstance(x, int) for x in value)
             or not all(x >= 0 for x in value)
         ):
             raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     """Prints the square with character #"""
     def my_print(self):
