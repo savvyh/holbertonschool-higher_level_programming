@@ -27,7 +27,7 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        
+
     """Prints the square with characte #"""
     def my_print(self):
         if self.__size == 0:
