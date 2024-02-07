@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """
     Function that divides all elements of a matrix.
-    Write an error if the matrix is not a list of int or float.
-    Write an error if each row of the matrix is not the same size.
-    All function must be divided by div.
-    Div must be a number et can't be equal to 0.
+    Write an error if the matrix is not a list of int or float. 
+    Also if each row of the matrix is not the same size.
 """
 
 
 def matrix_divided(matrix, div):
+    """
+        Function that divides all elements of a matrix.
+    """
     new_matrix = []
 
     if div == 0:
