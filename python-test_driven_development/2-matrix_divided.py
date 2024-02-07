@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
     Function that divides all elements of a matrix.
-    Write an error if the matrix is not a list of int or float. 
+    Write an error if the matrix is not a list of int or float.
     Also if each row of the matrix is not the same size.
 """
 
