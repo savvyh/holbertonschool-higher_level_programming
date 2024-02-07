@@ -1,0 +1,21 @@
+------------------------------------------------
+# doctest 3-say_my_name.py
+------------------------------------------------
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Check if the test successed: 
+>>> say_my_name("Sarah", "Croche")
+My name is Sarah Croche
+
+>>> say_my_name("Jack", "Sparrow")
+My name is Jack Sparrow
+
+The first name is not a string
+>>> say_my_name(0, "riginal")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+The last_name is not a string
+>>> say_my_name("Marc", 5)
+Traceback (most recent call last):
+TypeError: last_name must be a string
