@@ -30,7 +30,17 @@ Use a matrix with only one row:
 Traceback (most recent call last):
 TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
+Use a matrix with 2 invalids values:
+>>> matrix_divided([a, b], [f, p], 3)
+Traceback (most recent call last):
+NameError: name 'a' is not defined
+
 Use a matrix without row:
->>> matrix_divided()
+>>> matrix_divided(None)
 Traceback (most recent call last):
 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Use a matrix with None:
+>>> matrix_divided(None)
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
