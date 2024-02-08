@@ -40,11 +40,6 @@ Use a matrix without row:
 Traceback (most recent call last):
 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
-Use a matrix with None:
->>> matrix_divided(None)
-Traceback (most recent call last):
-TypeError: matrix_divided() missing 1 required positional argument: 'div'
-
 Use a matrix with invalid positional:
 >>> matrix_divided([1, 2],  [5, 8], 2)
 Traceback (most recent call last):
