@@ -7,6 +7,9 @@ Success :
 >>> matrix_divided([[1, 2], [3, 4]], 2.0)
 [[0.5, 1.0], [1.5, 2.0]]
 
+>>> matrix_divided([[1, 2], [3, 4]], -2.0)
+[[-0.5, -1.0], [-1.5, -2.0]]
+
 Divide a matrix by 0:
 >>> matrix_divided([[1, 2], [3, 4]], 0)
 Traceback (most recent call last):
@@ -21,3 +24,13 @@ Use a matrix with different size of the row:
 >>> matrix_divided([[1, 2], [3, 4, 5]], 2.0)
 Traceback (most recent call last):
 TypeError: Each row of the matrix must have the same size
+
+Use a matrix with only one row:
+>>> matrix_divided([1,2])
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Use a matrix without row:
+>>> matrix_divided()
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
