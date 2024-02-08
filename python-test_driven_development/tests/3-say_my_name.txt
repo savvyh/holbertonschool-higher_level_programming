@@ -4,11 +4,12 @@
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 Check if the test successed: 
+
 >>> say_my_name("Sarah", "Croche")
 My name is Sarah Croche
 
 >>> say_my_name("Jack")
-My name is Jack
+My name is Jack 
 
 Test an empty string : 
 say_my_name("", "")
