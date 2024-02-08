@@ -21,12 +21,27 @@
 >>> add_integer(1, 2, 3)
 Traceback (most recent call last):
 TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
 >>> add_integer(None)
 Traceback (most recent call last):
 TypeError: a must be an integer
+
+>>> add_integer(school, 2)
+Traceback (most recent call last):
+NameError: name 'school' is not defined
+
 >>> add_integer("5", "3")
 Traceback (most recent call last):
 TypeError: a must be an integer
+
+>>> add_integer(3, "a")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer("school")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
 >>> add_integer(float("inf"), 10)
 Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
