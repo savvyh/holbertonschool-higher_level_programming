@@ -7,10 +7,14 @@ Check if the test successed:
 >>> say_my_name("Sarah", "Croche")
 My name is Sarah Croche
 
->>> say_my_name("Jack", "Sparrow")
-My name is Jack Sparrow
+>>> say_my_name("Jack")
+My name is Jack
 
-The first name is not a string
+Test an empty string : 
+say_my_name("", "")
+My name is 
+
+The first name is not a string : 
 >>> say_my_name(0, "riginal")
 Traceback (most recent call last):
 TypeError: first_name must be a string
@@ -19,3 +23,33 @@ The last_name is not a string
 >>> say_my_name("Marc", 5)
 Traceback (most recent call last):
 TypeError: last_name must be a string
+
+Test with None argument first name: 
+>>> say_my_name(None, "Name")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+Test with None argument last name: 
+>>> say_my_name("Name", None)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+Argument of incorrect type for first name:
+>>> say_my_name(1, "Name")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+Argument of incorrect type for last name:
+>>> say_my_name("Name", 1)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+Boolean argument for first_name: 
+>>> say_my_name(True, "Last")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+No arguments passed to function: 
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
