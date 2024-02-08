@@ -35,3 +35,30 @@ Test with a empty string:
 Test a string without the special characters:
 >>> text_indentation("This string has no special indentation characters!")
 This string has no special indentation characters!
+
+Test a string with multiple special characters:
+>>> text_indentation("This is a long sentence. It contains multiple special characters: ?, !, and .")
+This is a long sentence.
+<BLANKLINE>
+It contains multiple special characters:
+<BLANKLINE>
+?
+<BLANKLINE>
+, !, and .
+<BLANKLINE>
+
+Test a string with multiple space and with characters:
+>>> text_indentation("   Testing printing text with leading whitespace.")
+Testing printing text with leading whitespace.
+<BLANKLINE>
+
+Test a string with multiple space and without characters:
+>>> text_indentation("   Testing printing text with leading whitespace")
+Testing printing text with leading whitespace.
+
+Test a string with multiple trailing spaces and characters:
+>>> text_indentation("Testing printing text with multiple trailing spaces?.  ")
+Testing printing text with multiple trailing spaces?
+<BLANKLINE>
+.
+<BLANKLINE>
