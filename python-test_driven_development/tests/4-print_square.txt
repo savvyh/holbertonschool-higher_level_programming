@@ -7,8 +7,8 @@ Success:
 >>> print_square(1)
 #
 
-Check if the size is not an integer: 
->>> print_square(2.5)
+Check if the size is a float:
+>>> print_square(2.7855)
 Traceback (most recent call last):
 TypeError: size must be an integer
 
@@ -16,3 +16,13 @@ Check if the size is positive:
 >>> print_square(-8)
 Traceback (most recent call last):
 ValueError: size must be >= 0
+
+Test with a string argument:
+>>> print_square("9")
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+Test with the None argument:
+>>> print_square(None)
+Traceback (most recent call last):
+TypeError: size must be an integer
