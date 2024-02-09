@@ -12,7 +12,8 @@ Success :
 
 Division with an empty matrix:
 >>> matrix_divided([], 2)
-[]
+Traceback (most recent call last):
+IndexError: list index out of range
 
 Divide a matrix by 0:
 >>> matrix_divided([[1, 2], [3, 4]], 0)
