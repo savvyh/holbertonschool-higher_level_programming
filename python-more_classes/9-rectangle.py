@@ -95,6 +95,7 @@ class Rectangle:
     """
         Function that return the biggest rectangle based on the area
     """
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
@@ -109,5 +110,6 @@ class Rectangle:
         Class method that returns a new Rectangle instance with :
         width == height == size
     """
+    @classmethod
     def square(cls, size=0):
         return cls(size, size)
