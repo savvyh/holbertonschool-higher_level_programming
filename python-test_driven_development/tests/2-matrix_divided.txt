@@ -38,16 +38,12 @@ NameError: name 'a' is not defined
 Use a matrix without row:
 >>> matrix_divided(None)
 Traceback (most recent call last):
-TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
 Use a matrix with invalid positional:
 >>> matrix_divided([1, 2],  [5, 8], 2)
 Traceback (most recent call last):
 TypeError: matrix_divided() takes 2 positional arguments but 3 were given
-
-Use a matrix with invalid syntax:
->>> matrix_divided([[1, 2], [3, 4]]], 2.0)
-SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
 
 Matrix which is not a list:
 >>> matrix = ["8", [5, 3]]
