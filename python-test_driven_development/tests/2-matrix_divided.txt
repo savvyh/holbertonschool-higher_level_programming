@@ -12,8 +12,7 @@ Success :
 
 Division with an empty matrix:
 >>> matrix_divided([], 2)
-Traceback (most recent call last):
-IndexError: list index out of range
+[]
 
 Divide a matrix by 0:
 >>> matrix_divided([[1, 2], [3, 4]], 0)
@@ -51,11 +50,11 @@ Traceback (most recent call last):
 TypeError: matrix_divided() takes 2 positional arguments but 3 were given
 
 Matrix which is not a list:
->>> matrix = ["8", [5, 3]]
+>>> matrix = (["8", [5, 3]], 2)
 >>> div = 2
 >>> matrix_divided(matrix, div)
 Traceback (most recent call last):
-TypeError: matrix must be a matrix (list of lists)of integers/floats
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Divide a matrix by a non-integer value:
 >>> matrix_divided([[1, 2], [3, 4]], 'a')
