@@ -10,21 +10,29 @@ def matrix_divided(matrix, div):
     """
         Function that divides all elements of a matrix.
     """
-    new_matrix = []
 
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
+    if not all(isinstance(row, list) for row in matrix):
+        raise TypeError("matrix must be a matrix "
+                        "(list of lists) of integers/floats")
+    if not isinstance(matrix, list):
+        raise TypeError("matrix must be a matrix "
+                        "(list of lists) of integers/floats")
 
-    row_length = len(matrix[0])
+    row_length = None
     for row in matrix:
-        if not isinstance(row, list):
-            raise TypeError("matrix must be a matrix (list of lists)"
-                            "of integers/floats")
-        if len(row) != row_length:
+        if not all(isinstance(value, (int, float)) for value in row):
+            raise TypeError("matrix must be a matrix "
+                            "(list of lists) of integers/floats")
+        if row_length is None:
+            row_length = len(row)
+        elif len(row) != row_length:
             raise TypeError("Each row of the matrix must have the same size")
 
-    new_matrix = [[round(num / div, 2) for num in row] for row in matrix]
+    new_matrix = [[round(value / div, 2) for value in row] for row in matrix]
+
 
     return new_matrix
