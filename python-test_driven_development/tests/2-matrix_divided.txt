@@ -51,3 +51,8 @@ Matrix which is not a list:
 >>> matrix_divided(matrix, div)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists)of integers/floats
+
+Divide a matrix by a non-integer value:
+>>> matrix_divided([[1, 2], [3, 4]], 'a')
+Traceback (most recent call last):
+TypeError: div must be a number
