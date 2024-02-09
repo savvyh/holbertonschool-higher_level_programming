@@ -10,6 +10,10 @@ Success :
 >>> matrix_divided([[1, 2], [3, 4]], -2.0)
 [[-0.5, -1.0], [-1.5, -2.0]]
 
+Division with an empty matrix:
+>>> matrix_divided([], 2)
+[]
+
 Divide a matrix by 0:
 >>> matrix_divided([[1, 2], [3, 4]], 0)
 Traceback (most recent call last):
