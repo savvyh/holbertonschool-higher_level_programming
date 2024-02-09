@@ -14,8 +14,15 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     list_characters = [".", "?", ":"]
+    new_line = True
     for index in text:
-        if index in list_characters:
+        if new_line and index == ' ':
+            continue
+        elif index == '\n':
+            new_line = True
+        elif index in list_characters:
             print(index + "\n\n", end="")
+            new_line = True
         else:
             print(f"{index}", end="")
+            new_line = False
