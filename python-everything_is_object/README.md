@@ -1,5 +1,7 @@
 # Python - Everything is object
 
+![_5cc38c4e-ca9d-404f-bce9-d3e1286902c7](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/c6a5f2a5-b140-40a2-b6cb-2f19f4ad9bd5)
+
 ## General 🐍
 
 In Python, objects are pieces of memory storing data and methods, while classes serve as blueprints for creating objects. Differences lie between mutable and immutable objects: the former can be changed after creation, while the latter cannot. References are values pointing to objects in memory, and assignment binds names to values. Aliases are alternative names for the same data. Variables are identical if they reference the same object and linked to the same object if they share the same memory address. To display the memory address in CPython, one can use the id() function. Python has built-in mutable types like lists and dictionaries, and immutable types such as integers and strings. Variables are passed to functions by passing references to objects.
@@ -12,7 +14,7 @@ In Python, objects are pieces of memory storing data and methods, while classes 
     * All files must be executable.
     * Use #!/usr/bin/python3
 
-- Answer Files `.txt` : 
+- Answer Files `.txt` :
     * Only one line
     * No Shebang on the first line (“#!/usr/bin/python3”)
     * All files should end with a new line
