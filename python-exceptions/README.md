@@ -1,5 +1,7 @@
 # Python - Exceptions
 
+![_0eefce92-3f88-4c97-8e4c-1961fb928142](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/47b9d7ab-9ddd-48fd-bc3d-4b2d4ef721c4)
+
 ## General 🐍
 
 This project explores various fundamental concepts of Python programming. It outlines the reasons behind Python's excellence, addresses the crucial distinction between errors and exceptions, and delves into the appropriate use of exceptions to ensure smooth programming. Proper exception handling is also examined, along with catching exceptions, triggering built-in ones, and the need to implement cleanup actions after programming errors. In summary, it is a professional guide on the intricacies of Python and effective error management throughout the development process.
