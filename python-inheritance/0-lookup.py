@@ -6,4 +6,8 @@
 
 
 def lookup(obj):
+    """
+        function returns the list of attributes and methods 
+        of a specified object or module using dir()
+    """
     return dir(obj)
