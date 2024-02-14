@@ -49,6 +49,11 @@ Traceback (most recent call last):
 ...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
+>>> try:
+...     bg.integer_validator("x", 1)
+... except Exception as e:
+...     print(e)
+
 >>> bg.integer_validator(1)
 Traceback (most recent call last):
 ...
@@ -67,6 +72,18 @@ age must be an integer
 x must be greater than 0
 
 >>> try:
+...     bg.integer_validator("x", -2)
+... except Exception as e:
+...     print(e)
+x must be greater than 0
+
+>>> try:
 ...     bg.integer_validator("x", 1)
 ... except Exception as e:
 ...     print(e)
+
+>>> try:
+...     bg.integer_validator(None, None)
+... except Exception as e:
+...     print(e)
+None must be an integer
