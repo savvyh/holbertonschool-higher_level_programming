@@ -45,6 +45,7 @@ class Rectangle(BaseGeometry):
         """implemented the area method"""
         return (self.__width * self.__height)
 
+
 class Square(Rectangle):
     """Write a class that inherits from Rectangle"""
 
@@ -53,7 +54,6 @@ class Square(Rectangle):
         super().__init__(size, size)
         self.__size = size
 
-    
     def area(self):
         """implemented the area method"""
         return (self.__size * self.__size)
