@@ -5,6 +5,10 @@ doctest of the function integer_validator
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
 
+>>> bg = BaseGeometry()
+>>> type(bg)
+<class '7-base_geometry.BaseGeometry'>
+
 >>> bg.area()
 Traceback (most recent call last):
 ...
@@ -34,3 +38,14 @@ ValueError: bonjour must be greater than 0
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator(1, 2, 3)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+>>> bg.integer_validator(1)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
