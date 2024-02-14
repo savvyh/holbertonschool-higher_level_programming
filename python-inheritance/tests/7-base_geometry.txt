@@ -5,7 +5,6 @@ doctest of the function integer_validator
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
 
->>> bg = BaseGeometry()
 >>> type(bg)
 <class '7-base_geometry.BaseGeometry'>
 
@@ -49,3 +48,14 @@ Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
 
+>>> try:
+...     bg.integer_validator("age", 3.5)
+... except Exception as e:
+...     print(e)
+age must be an integer
+
+>>> try:
+...     bg.integer_validator("x", 0)
+... except Exception as e:
+...     print(e)
+x must be greater than 0
