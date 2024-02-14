@@ -92,3 +92,13 @@ None must be an integer
 Traceback (most recent call last):
 ...
 TypeError: number must be an integer
+
+>>> bg.integer_validator(,1)
+Traceback (most recent call last)
+...
+SyntaxError: invalid syntax
+
+>>> bg.integer_validator("", True)
+Traceback (most recent call last):
+...
+TypeError:  must be an integer
