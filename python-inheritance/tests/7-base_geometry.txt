@@ -13,6 +13,12 @@ Traceback (most recent call last):
 ...
 Exception: area() is not implemented
 
+>>> try:
+...     bg.area()
+... except Exception as e:
+...     print(e)
+area() is not implemented
+
 >>> bg.integer_validator("width", -4)
 Traceback (most recent call last):
 ...
@@ -59,3 +65,8 @@ age must be an integer
 ... except Exception as e:
 ...     print(e)
 x must be greater than 0
+
+>>> try:
+...     bg.integer_validator("x", 1)
+... except Exception as e:
+...     print(e)
