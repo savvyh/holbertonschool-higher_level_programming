@@ -87,3 +87,8 @@ x must be greater than 0
 ... except Exception as e:
 ...     print(e)
 None must be an integer
+
+>>> bg.integer_validator("number", float('inf'))
+Traceback (most recent call last):
+...
+TypeError: number must be an integer
