@@ -1,48 +1,49 @@
 # Python - Input / Output
 
+![_60181c15-fb52-4445-8beb-330a5189604e](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/3af41847-2b88-49ad-8d72-d3773ed90f42)
+
 ## General 🐍
-    **How to Perform File Operations in Python :**
-        - Opening a File : use the function `open()` specifying the file path and mode (e.g., read, write, append)
-            - `file = open("filename.txt", "r")`
-        - Writing Text to a File : use the `write()` method. Make sure to open the file in write or append mode
-            - `with open("filename.txt", "w") as file:
-                    file.write("Hello, world!")`
-        - Reading the Full Content of a File : use the `read()` method after opening the file in read mode : 
-            - `with open("filename.txt", "r") as file:
-                    content = file.read()
-                    print(content)`
-        - Reading a File Line by Line : use a loop or the `readline()` method within a loop : 
-            - `with open("filename.txt", "r") as file:
-                    for line in file:
-                    print(line)`
-        - Moving the Cursor in a File : use the `seek()` method : 
-            - `with open("filename.txt", "r") as file:
-                    file.seek(10)
-                    content = file.read()
-                    print(content)`
-        - Closing a File : The `with` statement in Python is commonly used for file operations to automatically close files after use : 
-            - `with open("filename.txt", "r") as file:
-                    content = file.read()
-                    print(content)`
+**How to Perform File Operations in Python :**
+- Opening a File : use the function `open()` specifying the file path and mode (e.g., read, write, append)
+   - `file = open("filename.txt", "r")`
+- Writing Text to a File : use the `write()` method. Make sure to open the file in write or append mode
+   - `with open("filename.txt", "w") as file:
+   file.write("Hello, world!")`
+- Reading the Full Content of a File : use the `read()` method after opening the file in read mode : 
+   - `with open("filename.txt", "r") as file:
+         content = file.read()
+         print(content)`
+- Reading a File Line by Line : use a loop or the `readline()` method within a loop : 
+   - `with open("filename.txt", "r") as file:
+         for line in file:
+         print(line)`
+- Moving the Cursor in a File : use the `seek()` method : 
+   - `with open("filename.txt", "r") as file:
+         file.seek(10)
+         content = file.read()
+         print(content)`
+- Closing a File : The `with` statement in Python is commonly used for file operations to automatically close files after use : 
+   - `with open("filename.txt", "r") as file:
+         content = file.read()
+         print(content)`
 
-    **Understanding JSON Serialization and Deserialization :**
-        - What is JSON?
-            - JSON (JavaScript Object Notation) is a lightweight format for data interchange, commonly used for serialization and transmission over the internet. It's easily readable and writable by humans and parseable and generatable by machines.
-        - What is serialisation ?
-            - Serialization is converting a Python data structure into a JSON string, enabling storage or transmission in a format easily reconstructed later.
-        - What is Deserialization ?
-            - Deserialization converts a JSON string back into a Python data structure, allowing its use within a Python program.
-        - How to Convert Between Python and JSON :
-            - Python provides modules like json for serializing and deserializing JSON data. json.dumps() converts a Python object to a JSON string, while json.loads() converts a JSON string to a Python object.
-    
-    **Accessing Command Line Parameters in a Python Script**
-        - You can access command line parameters passed to a Python script using the sys.argv list provided by the sys module :
-            - `import sys
+**Understanding JSON Serialization and Deserialization :**
+- What is JSON?
+   - JSON (JavaScript Object Notation) is a lightweight format for data interchange, commonly used for serialization and transmission over the internet. It's easily readable and writable by humans and parseable and generatable by machines.
+- What is serialisation ?
+   - Serialization is converting a Python data structure into a JSON string, enabling storage or transmission in a format easily reconstructed later.
+- What is Deserialization ?
+   - Deserialization converts a JSON string back into a Python data structure, allowing its use within a Python program.
+- How to Convert Between Python and JSON :
+   - Python provides modules like json for serializing and deserializing JSON data. json.dumps() converts a Python object to a JSON string, while json.loads() converts a JSON string to a Python object.
 
-                    script_name = sys.argv[0]
-                    first_parameter = sys.argv[1]
-                    second_parameter = sys.argv[2]`
-    
+**Accessing Command Line Parameters in a Python Script**
+- You can access command line parameters passed to a Python script using the sys.argv list provided by the sys module :
+   - `import sys
+         script_name = sys.argv[0]
+         first_parameter = sys.argv[1]
+         second_parameter = sys.argv[2]`
+
 ## Requirements 💾
 Python Script :
 - We are not allowed to import module.
