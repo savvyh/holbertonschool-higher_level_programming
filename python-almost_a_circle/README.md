@@ -1,5 +1,7 @@
 # Python - Almost a Circle
 
+![_35f54180-c558-4289-8ffa-0718d51a905b](https://github.com/savvyh/holbertonschool-higher_level_programming/assets/139894873/f83ae043-5916-4f18-b102-867193341331)
+
 ## General 🐍
 
 Here is a new project about Python. This project offers a comprehensive review of essential Python concepts, covering topics such as importing modules, handling exceptions, defining classes with private attributes and methods, implementing getters and setters, utilizing class methods and static methods, exploring inheritance, performing unit testing, and reading/writing files. 
