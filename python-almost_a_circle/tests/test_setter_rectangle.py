@@ -6,7 +6,7 @@ from models.rectangle import Rectangle
 from models.base import Base
 
 
-class TestBase(unittest.TestCase):
+class TestSetterRectangle(unittest.TestCase):
     """Test case of the import class Base"""
 
     def setUp(self):
@@ -25,51 +25,43 @@ class TestBase(unittest.TestCase):
 
     def test_height_setter(self):
         """Test the setter of the height"""
-        rect = Rectangle(1, 9, 3, 15, 6)
-        rect.height = 12
+        rect = Rectangle(1, 12, 3, 15, 6)
         self.assertEqual(12, rect.height)
 
     def test_width_setter(self):
         """Test the setter of the width"""
         rect = Rectangle(4, 3, 2, 1, 9)
-        rect.width = 8
-        self.assertEqual(8, rect.width)
+        self.assertEqual(4, rect.width)
 
     def test_height_setter_negative(self):
         """Test to set a negative int to the height"""
-        rect = Rectangle(1, 2, 3, 4, 5)
         with self.assertRaises(ValueError):
-            rect.height = -8
+            Rectangle(1, -2, 3, 4, 5)
 
     def test_width_setter_negative(self):
         """Test to set a negative int to the width"""
-        rect = Rectangle(1, 2, 3, 4, 5)
         with self.assertRaises(ValueError):
-            rect.width = -8
+            Rectangle(-1, 2, 3, 4, 5)
 
     def test_height_setter_float(self):
         """Test to set a float to the height"""
-        rect = Rectangle(4, 6, 7, 8, 1)
         with self.assertRaises(TypeError):
-            rect.height = 3.14
+            Rectangle(4, 3.14, 7, 8, 1)
 
     def test_width_setter_float(self):
         """Test to set a float to the width"""
-        rect = Rectangle(4, 6, 7, 8, 1)
         with self.assertRaises(TypeError):
-            rect.width = 3.14
+            Rectangle(3.14, 6, 7, 8, 1)
 
     def test_height_setter_string(self):
         """Test to set a string to the height"""
-        rect = Rectangle(6, 5, 8, 7, 9)
         with self.assertRaises(TypeError):
-            rect.height = "hello"
+            Rectangle(6, "hello", 8, 7, 9)
 
     def test_width_setter_string(self):
         """Test to set a string to the width"""
-        rect = Rectangle(6, 5, 8, 7, 9)
         with self.assertRaises(TypeError):
-            rect.width = "hello"
+            Rectangle("hello", 5, 8, 7, 9)
 
 
 if __name__ == '__main__':
