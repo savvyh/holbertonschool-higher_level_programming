@@ -9,24 +9,24 @@ Additionally, participants will delve into more advanced concepts including work
 
 ### Step by step ⚔️
 
-- Write the first class Base
-- Write the class Rectangle that inherits from Base
-- Update the class Rectangle by adding validation of all setter methods and instantiation (id excluded)
-- Update the class Rectangle by adding the public method `def area(self):` that returns the area value of the Rectangle instance
-- Update the class Rectangle by adding the public method `def display(self):` that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here
-- Update the class Rectangle by overriding the `str` method so that it returns `[Rectangle]` instance
-- Update the class Rectangle by improving the public method `def display(self):` to print in stdout the Rectangle instance with the character # by taking care of x and y
-- Update the class Rectangle by adding the public method `def update(self, *args):` that assigns an argument to each attribute
-- Update the class Rectangle by updating the public method `def update(self, *args):` by changing the prototype to `update(self, *args, kwargs)` that assigns a key/value argument to attributes
-- Write the class Square that inherits from Rectangle
-- Update the class Square by adding the public getter and setter `size`
-- Update the class Square by adding the public method `def update(self, *args, kwargs):` that assigns attributes
-- Update the class Rectangle by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a Rectangle
-- Update the class Square by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a Square
-- Update the class Base by adding the class method `def savetofile(cls, listobjs):` that writes the JSON string representation of `listobjs` to a file
-- Update the class Base by adding the static method `def fromjsonstring(jsonstring):` that returns the list of the JSON string representation `jsonstring`
-- Update the class Base by adding the class method `def create(cls, dictionary):` that returns an instance with all attributes already set
-- Update the class Base by adding the class method `def loadfromfile(cls):` that returns a list of instances
+- Write the first class `Base`
+- Write the class `Rectangle` that inherits from `Base`
+- Update the class `Rectangle` by adding validation of all setter methods and instantiation (id excluded)
+- Update the class `Rectangle` by adding the public method `def area(self):` that returns the area value of the `Rectangle` instance
+- Update the class `Rectangle` by adding the public method `def display(self):` that prints in stdout the `Rectangle` instance with the character `#` - you don’t need to handle `x` and `y` here
+- Update the class `Rectangle` by overriding the `str` method so that it returns `[Rectangle]` instance
+- Update the class `Rectangle` by improving the public method `def display(self):` to print in stdout the `Rectangle` instance with the character `#` by taking care of `x` and `y`
+- Update the class `Rectangle` by adding the public method `def update(self, *args):` that assigns an argument to each attribute
+- Update the class `Rectangle` by updating the public method `def update(self, *args):` by changing the prototype to `update(self, *args, kwargs)` that assigns a key/value argument to attributes
+- Write the class `Square` that inherits from `Rectangle`
+- Update the class `Square` by adding the public getter and setter `size`
+- Update the class `Square` by adding the public method `def update(self, *args, kwargs):` that assigns attributes
+- Update the class `Rectangle` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a Rectangle
+- Update the class `Square` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a Square
+- Update the class `Base` by adding the class method `def savetofile(cls, listobjs):` that writes the JSON string representation of `listobjs` to a file
+- Update the class `Base` by adding the static method `def fromjsonstring(jsonstring):` that returns the list of the JSON string representation `jsonstring`
+- Update the class `Base` by adding the class method `def create(cls, dictionary):` that returns an instance with all attributes already set
+- Update the class `Base` by adding the class method `def loadfromfile(cls):` that returns a list of instances
 
 ### Objectives :astronaut:
 - What is Unit testing and how to implement it in a large project ?
@@ -52,14 +52,17 @@ Python Script :
 - We are not allowed to import module.
 - Respect the pycodestyle.
 - All files must be executable.
-- Use #!/usr/bin/python3
+- Use `#!/usr/bin/python3`
 
-Python Test Cases :
+Python Unit Test :
 
 - All test files should be inside a folder tests
-- All test files should be text files (extension: .txt)
-- All tests should be executed by using this command: python3 -m doctest ./tests/*
+- All test files should be text files (extension: `.txt`)
+- All tests should be executed by using this command: `python3 -m doctest ./tests/*`
 - All class, modules and functions should have a documentation
+- Tests folder should be the same as the project, for exemple `models/base.py` >> `tests/test_models/test_base.py`
+- All tests should be executed by using this command: `python3 -m unittest discover tests`
+- Test file by file by using this command: `python3 -m unittest tests/test_models/test_base.py`
 
 ### Tasks :arrow_heading_down:
 0. If it's not tested it doesn't work : 
