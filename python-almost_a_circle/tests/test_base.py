@@ -58,5 +58,6 @@ class TestBase(unittest.TestCase):
         test = Base(id="string")
         self.assertIsInstance(test.id, str)
 
+
 if __name__ == '__main__':
     unittest.main()

@@ -5,6 +5,7 @@ import unittest
 from models.rectangle import Rectangle
 from models.base import Base
 
+
 class TestBase(unittest.TestCase):
     """Test case of the import class Base"""
 
@@ -40,6 +41,7 @@ class TestBase(unittest.TestCase):
         """Test if ID is an integer"""
         test = Rectangle(1, 5, 74, 0, "hello")
         self.assertIsInstance(test.id, str)
+
 
 if __name__ == '__main__':
     unittest.main()

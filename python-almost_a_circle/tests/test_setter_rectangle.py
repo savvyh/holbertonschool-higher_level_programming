@@ -5,6 +5,7 @@ import unittest
 from models.rectangle import Rectangle
 from models.base import Base
 
+
 class TestBase(unittest.TestCase):
     """Test case of the import class Base"""
 
@@ -69,6 +70,7 @@ class TestBase(unittest.TestCase):
         rect = Rectangle(6, 5, 8, 7, 9)
         with self.assertRaises(TypeError):
             rect.width = "hello"
+
 
 if __name__ == '__main__':
     unittest.main()
