@@ -6,8 +6,8 @@ from models.rectangle import Rectangle
 from models.base import Base
 
 
-class TestBase(unittest.TestCase):
-    """Test case of the import class Base"""
+class TestRectangle(unittest.TestCase):
+    """Test case of the import class Rectangle"""
 
     def setUp(self):
         """Reset the variable __nb_objects for each test"""
