@@ -28,3 +28,6 @@ class TestSquare(unittest.TestCase):
         """Test if ID is negative"""
         test = Square(2, 8, 0, -2)
         self.assertTrue(test.id < 0)
+
+if __name__ == '__main__':
+    unittest.main()
