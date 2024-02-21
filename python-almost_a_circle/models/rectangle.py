@@ -5,6 +5,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """A class rectangle inherits from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize the rectangle"""
@@ -119,3 +120,11 @@ class Rectangle(Base):
         """Return a string with all attributes"""
         return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -"
                 f" {self.__width}/{self.__height}")
+
+    def display_update(self):
+        """Prints the character #, taking into account x and y."""
+        for _ in range(self.__y):
+            print()
+
+        for _ in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
