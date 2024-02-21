@@ -25,4 +25,3 @@ class Square(Rectangle):
     def __str__(self):
         """Return a string with all attributes"""
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}")
-
