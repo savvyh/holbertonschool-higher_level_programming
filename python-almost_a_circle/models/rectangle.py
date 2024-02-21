@@ -113,18 +113,14 @@ class Rectangle(Base):
 
     def display(self):
         """Prints the Rectangle instance with the character #"""
+        for _ in range(self.__y):
+            print()
+
         for _ in range(self.__height):
-            print('#' * self.__width)
+            print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
         """Return a string with all attributes"""
         return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -"
                 f" {self.__width}/{self.__height}")
 
-    def display_update(self):
-        """Prints the character #, taking into account x and y."""
-        for _ in range(self.__y):
-            print()
-
-        for _ in range(self.__height):
-            print(" " * self.__x + "#" * self.__width)
