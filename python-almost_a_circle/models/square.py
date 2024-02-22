@@ -38,3 +38,16 @@ class Square(Rectangle):
     def __str__(self):
         """Return a string with all attributes"""
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}")
+
+    def update(self, *args, **kwargs):
+        """Assigns attributes for *args and **kwargs"""
+        args = ("self.id", "self.size", "self.x", "self.y")
+
+    def update(self, *args, **kwargs):
+        """Assigns an argument to each attribute (id, width, height, x, y)"""
+        if args is not None:
+            arguments = ['id', "size", 'x', 'y']
+            for key, value in zip(arguments, args):
+                setattr(self, key, value)
+        for key, value in kwargs.items():
+            setattr(self, key, value)
