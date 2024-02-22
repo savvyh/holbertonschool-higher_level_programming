@@ -29,5 +29,11 @@ class TestSquare(unittest.TestCase):
         test = Square(2, 8, 0, -2)
         self.assertTrue(test.id < 0)
 
+    def test_id_is_integer(self):
+        """Test if ID is an integer"""
+        test = Square(1, 74, 0, "hello")
+        self.assertIsInstance(test.id, str)
+
+
 if __name__ == '__main__':
     unittest.main()
