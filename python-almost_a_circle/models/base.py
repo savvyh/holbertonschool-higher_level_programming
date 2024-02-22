@@ -49,3 +49,17 @@ class Base:
         dummy = cls(1, 1)
         dummy.update(**dictionary)
         return dummy
+
+    def update(self, *args, **kwargs):
+        """Assigns an argument to each attribute (id, size, x, y)"""
+        if args is not None:
+            arguments = ['id', "size", 'x', 'y']
+            for key, value in zip(arguments, args):
+                setattr(self, key, value)
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
+    @classmethod
+    def load_from_file(cls):
+        """Return a list of instances"""
+
