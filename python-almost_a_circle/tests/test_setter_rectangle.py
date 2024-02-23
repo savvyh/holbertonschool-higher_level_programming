@@ -28,7 +28,7 @@ class TestSetterRectangle(unittest.TestCase):
         with self.assertRaises(TypeError):
             Rectangle(2, {52}, 3, 4, 5)
         with self.assertRaises(TypeError):
-            Rectangle(3, (1,2), 4, 5, 6)
+            Rectangle(3, (1, 2), 4, 5, 6)
 
     def test_width_getter(self):
         """Test the property of the width"""
@@ -45,7 +45,7 @@ class TestSetterRectangle(unittest.TestCase):
         with self.assertRaises(TypeError):
             Rectangle({52}, 2, 3, 4, 5)
         with self.assertRaises(TypeError):
-            Rectangle((1,2), 3, 4, 5, 6)
+            Rectangle((1, 2), 3, 4, 5, 6)
 
     def test_height_setter(self):
         """Test the setter of the height"""
@@ -62,7 +62,7 @@ class TestSetterRectangle(unittest.TestCase):
         with self.assertRaises(TypeError):
             Rectangle(2, {52}, 3, 4, 5)
         with self.assertRaises(TypeError):
-            Rectangle(3, (1,2), 4, 5, 6)
+            Rectangle(3, (1, 2), 4, 5, 6)
 
     def test_width_setter(self):
         """Test the setter of the width"""
@@ -79,7 +79,7 @@ class TestSetterRectangle(unittest.TestCase):
         with self.assertRaises(TypeError):
             Rectangle({52}, 2, 3, 4, 5)
         with self.assertRaises(TypeError):
-            Rectangle((1,2), 3, 4, 5, 6)
+            Rectangle((1, 2), 3, 4, 5, 6)
 
 
 if __name__ == '__main__':
