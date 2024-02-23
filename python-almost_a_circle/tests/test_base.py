@@ -37,6 +37,13 @@ class TestBase(unittest.TestCase):
         test5 = Base()
         self.assertEqual(test5.id, 1)
 
+    def test_id_error(self):
+        """Test error"""
+        with self.assertRaises(TypeError):
+            b = Base(1, 2)
+        with self.assertRaises(TypeError):
+            b = Base(1, None)
+
     def test_with_none_id(self):
         """Test with None as ID"""
         test6 = Base(None)
