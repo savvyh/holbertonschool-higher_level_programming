@@ -13,50 +13,42 @@ class TestArea(unittest.TestCase):
         """Reset the variable __nb_objects for each test"""
         Base._Base__nb_objects = 0
 
-    def test_height_is_negative(self):
-        """Test with a negative height"""
+    def test_negative_assignment(self):
+        """Test with a negative assignment"""
         with self.assertRaises(ValueError):
             Rectangle(7, -3)
-
-    def test_width_is_negative(self):
-        """Test with a negative width"""
         with self.assertRaises(ValueError):
             Rectangle(-7, 3)
-
-    def test_both_negative(self):
-        """Test with negatives width and height"""
         with self.assertRaises(ValueError):
             Rectangle(-7, -3)
 
-    def test_height_is_float(self):
-        """Test with a float height"""
+    def test_float_assignment(self):
+        """Test with a float assignment"""
         with self.assertRaises(TypeError):
             Rectangle(3, 5.5)
-
-    def test_width_is_float(self):
-        """Test with a float width"""
         with self.assertRaises(TypeError):
             Rectangle(3.3, 5)
-
-    def test_both_float(self):
-        """Test with float width and height"""
         with self.assertRaises(TypeError):
             Rectangle(3.3, 5.5)
 
-    def test_height_is_string(self):
-        """Test with a string height"""
+    def test_string_assignment(self):
+        """Test with a string assignment"""
         with self.assertRaises(TypeError):
             Rectangle(3, "everybody")
-
-    def test_width_is_string(self):
         """Test with a string width"""
         with self.assertRaises(TypeError):
             Rectangle("hi", 5)
-
-    def test_both_string(self):
-        """Test with strings width and height"""
         with self.assertRaises(TypeError):
             Rectangle("hi", "everybody")
+
+    def test_area_rectangle(self):
+        """tets area of the rectangle"""
+        r1 = Rectangle(3, 2)
+        self.assertEqual(r1.area(), 6)
+        r2 = Rectangle(2, 10)
+        self.assertEqual(r2.area(), 20)
+        r3 = Rectangle(8, 7, 0, 0, 12)
+        self.assertEqual(r3.area(), 56)
 
 
 if __name__ == '__main__':
