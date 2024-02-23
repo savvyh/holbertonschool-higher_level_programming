@@ -46,6 +46,8 @@ class TestSetterRectangle(unittest.TestCase):
             Rectangle({52}, 2, 3, 4, 5)
         with self.assertRaises(TypeError):
             Rectangle((1, 2), 3, 4, 5, 6)
+        with self.assertRaises(TypeError):
+            Rectangle(0, 4, 5, 6, 7, 8)
 
     def test_height_setter(self):
         """Test the setter of the height"""
@@ -80,6 +82,8 @@ class TestSetterRectangle(unittest.TestCase):
             Rectangle({52}, 2, 3, 4, 5)
         with self.assertRaises(TypeError):
             Rectangle((1, 2), 3, 4, 5, 6)
+        with self.assertRaises(TypeError):
+            Rectangle(0, 4, 5, 6, 7, 8)
 
 
 if __name__ == '__main__':
