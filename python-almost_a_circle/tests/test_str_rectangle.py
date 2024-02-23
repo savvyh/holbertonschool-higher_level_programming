@@ -43,5 +43,6 @@ class TestStrRectangle(unittest.TestCase):
         expected_output = "[Rectangle] (1) 1/0 - 5/5"
         self.assertEqual(str(r2), expected_output)
 
+
 if __name__ == '__main__':
     unittest.main()
