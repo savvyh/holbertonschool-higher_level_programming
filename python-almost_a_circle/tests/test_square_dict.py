@@ -37,6 +37,16 @@ class TestSquareToDictionary(unittest.TestCase):
         with self.assertRaises(TypeError):
             s.size = None
 
+    def test_to_dictionary(self):
+        """Test the to_dictionary method of Square"""
+        s1 = Square(5)
+        self.assertEqual(s1.to_dictionary(),
+                         {'id': 1, 'size': 5, 'x': 0, 'y': 0})
+
+        s2 = Square(3, 1, 3, 12)
+        self.assertEqual(s2.to_dictionary(),
+                         {'id': 12, 'size': 3, 'x': 1, 'y': 3})
+
 
 if __name__ == '__main__':
     unittest.main()
