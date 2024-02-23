@@ -47,6 +47,33 @@ class TestSquareToDictionary(unittest.TestCase):
         self.assertEqual(s2.to_dictionary(),
                          {'id': 12, 'size': 3, 'x': 1, 'y': 3})
 
+    def test_to_dict_square_ok(self):
+        """Test for dictionary for a normal square"""
+        s1 = Square(10, 2, 1)
+        self.assertEqual(s1.to_dictionary(), {
+                         'id': 1, 'x': 2, 'size': 10, 'y': 1})
+        s1 = Square(10, 2, 1, 8)
+        self.assertEqual(s1.to_dictionary(), {
+                         'id': 8, 'x': 2, 'size': 10, 'y': 1})
+        s5 = Square(3, 12)
+        self.assertEqual(s5.to_dictionary(), {
+                         'id': 2, 'x': 12, 'size': 3, 'y': 0})
+        s6 = Square(3)
+        self.assertEqual(s6.to_dictionary(), {
+                         'id': 3, 'size': 3, 'x': 0, 'y': 0})
+
+    def test_to_dict_square_value_error(self):
+        """Test for value error of the square"""
+        with self.assertRaises(ValueError):
+            s2 = Square(-2, 3, 12)
+            s2.to_dictionary()
+        with self.assertRaises(ValueError):
+            s3 = Square(2, -3, 12)
+            s3.to_dictionary()
+        with self.assertRaises(ValueError):
+            s4 = Square(2, 3, -12)
+            s4.to_dictionary()
+
 
 if __name__ == '__main__':
     unittest.main()
