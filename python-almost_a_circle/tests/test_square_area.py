@@ -20,3 +20,7 @@ class TestSquareToDictionary(unittest.TestCase):
 
         s2 = Square(7, 0, 0, 12)
         self.assertEqual(s2.area(), 49)
+
+
+if __name__ == '__main__':
+    unittest.main()
