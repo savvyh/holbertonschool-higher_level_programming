@@ -21,6 +21,8 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(test2.id, 2)
         test3 = Rectangle(6, 7, 1, 6)
         self.assertEqual(test3.id, 3)
+        with self.assertRaises(ValueError):
+            Rectangle(0, 5)
 
     def test_id(self):
         """Test with ID assignments"""
