@@ -81,6 +81,33 @@ class TestSquare(unittest.TestCase):
         s1.update(size=7, id=89, y=1)
         self.assertEqual(str(s1), "[Square] (89) 12/1 - 7")
 
+    def test_x_typeerror(self):
+        """Test x is not int"""
+        with self.assertRaises(TypeError):
+            Square("hello")
+
+    def test_y_typeerror(self):
+        """Test y is not int"""
+        with self.assertRaises(TypeError):
+            Square(1, "hello")
+
+    def test_size_valueerror(self):
+        """Test size <= 0"""
+        with self.assertRaises(ValueError):
+            Square(-1)
+        with self.assertRaises(ValueError):
+            Square(0)
+
+    def test_x_valueerror(self):
+        """Test x <= 0"""
+        with self.assertRaises(ValueError):
+            Square(1, -1)
+
+    def test_y_valueerror(self):
+        """Test y <= 0"""
+        with self.assertRaises(ValueError):
+            Square(1, 1, -1)
+
 
 if __name__ == '__main__':
     unittest.main()
