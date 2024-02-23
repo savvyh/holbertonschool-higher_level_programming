@@ -46,7 +46,7 @@ class TestLoadFile(unittest.TestCase):
         """Checks use of load_from_file with no file"""
         try:
             os.remove("Square.json")
-        except:
+        except FileNotFoundError:
             pass
         self.assertEqual(Square.load_from_file(), [])
 
@@ -54,7 +54,7 @@ class TestLoadFile(unittest.TestCase):
         """Checks use of load_from_file with empty file"""
         try:
             os.remove("Square.json")
-        except:
+        except FileNotFoundError:
             pass
         open("Square.json", 'a').close()
         self.assertEqual(Square.load_from_file(), [])
