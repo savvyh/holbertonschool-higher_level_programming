@@ -21,7 +21,7 @@ class TestLoadFile(unittest.TestCase):
         cls.rectangle = [Rectangle(10, 7, 2, 8), Rectangle(2, 4)]
         cls.square = [Square(5), Square(7, 9, 1)]
         cls.rectangle_json = "Rectangle.json"
-        cls.square_json= "Square.json"
+        cls.square_json = "Square.json"
 
     def test_save_and_load_rectangles(self):
         """Test save_to_file and load_from_file for rectangles"""
@@ -50,6 +50,7 @@ class TestLoadFile(unittest.TestCase):
             os.remove("Square.json")
         except FileNotFoundError:
             pass
+
 
 if __name__ == '__main__':
     unittest.main()
