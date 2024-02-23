@@ -34,6 +34,24 @@ class TestSquare(unittest.TestCase):
         test = Square(1, 74, 0, "hello")
         self.assertIsInstance(test.id, str)
 
+    def test_square(self):
+        """Test with size"""
+        s1 = Square(5)
+        self.assertEqual(str(s1), "[Square] (1) 0/0 - 5")
+        self.assertEqual(s1.area(), 25)
+
+    def test_square_x(self):
+        """Test with a size and a x"""
+        s1 = Square(2, 2)
+        self.assertEqual(str(s1), "[Square] (1) 2/0 - 2")
+        self.assertEqual(s1.area(), 4)
+
+    def test_square_x_y(self):
+        """Test with a size, x and y"""
+        s1 = Square(3, 1, 3)
+        self.assertEqual(str(s1), "[Square] (1) 1/3 - 3")
+        self.assertEqual(s1.area(), 9)
+
 
 if __name__ == '__main__':
     unittest.main()
